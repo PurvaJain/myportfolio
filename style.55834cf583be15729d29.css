@@ -8,7 +8,7 @@
 @font-face {
   font-family: 'FontAwesome';
   src: url(fonts/fontawesome-webfont.eot);
-  src: url(fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(fonts/fontawesome-webfont.woff2) format('woff2'), url(fonts/fontawesome-webfont.woff) format('woff'), url(fonts/fontawesome-webfont.ttf) format('truetype'), url(fonts/fontawesome-webfont.svg#fontawesomeregular) format('svg');
+  src: url(fonts/fontawesome-webfont.eot?#iefix&v=4.7.0) format('embedded-opentype'), url(fonts/fontawesome-webfont.woff2) format('woff2'), url(fonts/fontawesome-webfont.woff) format('woff'), url(fonts/fontawesome-webfont.ttf) format('truetype'), url(node_modules/font-awesome/fonts/fontawesome-webfont-015ccf94.svg#fontawesomeregular) format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -2366,7 +2366,7 @@
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
     .portfolio__navbar__ul__li__a {
       text-decoration: none;
-      color: #91640f;
+      color: #1e9fb2;
       position: relative;
       z-index: 1;
       align-items: center;
@@ -2387,7 +2387,7 @@
         height: 1px;
         content: ".";
         color: transparent;
-        background: #f1d204;
+        background: #1e9fb2;
         visibility: none;
         opacity: 0;
         z-index: -1; }
@@ -2465,7 +2465,7 @@
     color: #8c9597; }
 
 .portfolio__experience {
-  background-color: #3e2e54;
+  background-image: url("https://demos.onepagelove.com/illdy/wp-content/themes/illdy/layout/images/testiomnials-background.jpg");
   text-align: center;
   padding: 2.5rem 0;
   display: flex;
@@ -2516,13 +2516,18 @@
           padding: 0.9375rem;
           border-radius: 0.1875rem;
           margin-top: 1.25rem;
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+          box-shadow: 2px 8px 10px 0 rgba(0, 0, 0, 0.2), 2px 10px 30px 0 rgba(0, 0, 0, 0.19); }
           .portfolio__experience__work__timeline__block__content__p {
             padding-top: 15px; }
 
 .portfolio__education {
-  width: 80%;
-  margin: 2.5rem auto; }
+  padding: 2.5rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("https://raw.githubusercontent.com/PurvaJain/images/master/greenBg.png"); }
   .portfolio__education__heading {
     text-align: center;
     font-size: 35px;
@@ -2531,7 +2536,8 @@
     background-color: #f2f2f5;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     padding: 0.9375rem;
-    margin: 1.875rem 0; }
+    margin: 1.875rem 0;
+    width: 60%; }
     .portfolio__education__block__h4 {
       margin: 10px 0; }
 
@@ -2565,126 +2571,86 @@
           opacity: 0.4; }
 
 .portfolio__skills {
-  width: 80%;
-  margin: 0 auto;
-  padding: 2.5rem 0; }
+  width: 100%;
+  padding-top: 2.5rem; }
   .portfolio__skills__heading {
     text-align: center;
     font-size: 35px;
     color: #545454; }
-  .portfolio__skills__progressSection {
+  .portfolio__skills__progress {
+    list-style: none;
+    font: 12px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
+    width: 80%;
+    line-height: 2em;
     display: flex;
-    align-items: center;
-    padding: 30px 0; }
-    .portfolio__skills__progressSection__html {
-      width: 100%; }
-      .portfolio__skills__progressSection__html__htmlLabel {
-        animation: label 0.5s ease-out 0s;
-        animation-fill-mode: forwards;
-        opacity: 1;
-        padding-bottom: 10px; }
-    .portfolio__skills__progressSection__css {
-      width: 100%; }
-      .portfolio__skills__progressSection__css__cssLabel {
-        animation: label 0.5s ease-out 0s;
-        animation-fill-mode: forwards;
-        opacity: 1;
-        padding-bottom: 10px; }
-    .portfolio__skills__progressSection__js {
-      width: 100%; }
-      .portfolio__skills__progressSection__js__jsLabel {
-        animation: label 0.5s ease-out 0s;
-        animation-fill-mode: forwards;
-        opacity: 1;
-        padding-bottom: 10px; }
-    .portfolio__skills__progressSection__react {
-      width: 100%; }
-      .portfolio__skills__progressSection__react__reactLabel {
-        animation: label 0.5s ease-out 0s;
-        animation-fill-mode: forwards;
-        opacity: 1;
-        padding-bottom: 10px; }
-    .portfolio__skills__progressSection__redux {
-      width: 100%; }
-      .portfolio__skills__progressSection__redux__reduxLabel {
-        animation: label 0.5s ease-out 0s;
-        animation-fill-mode: forwards;
-        opacity: 1;
-        padding-bottom: 10px; }
-  .portfolio__skills .progress-bar {
-    height: 5px;
-    width: 90%;
-    position: relative;
-    z-index: 10;
-    background-color: #e5e9eb; }
-    .portfolio__skills .progress-bar__progress {
-      position: relative;
-      height: 100%;
-      background-image: linear-gradient(to right, #4cd964, #5ac8fa, #007aff, #34aadc, #5856d6, #ff2d55);
-      transition: width 0.5s ease-out;
-      border-radius: 0px 2px 2px 0px; }
-    .portfolio__skills .progress-bar__fill-1 {
-      animation: fill-1 0.5s ease-out 0s;
-      animation-fill-mode: forwards;
-      width: 0%; }
-    .portfolio__skills .progress-bar__fill-2 {
-      animation: fill-2 0.5s ease-out 0s;
-      animation-fill-mode: forwards;
-      width: 0%; }
-    .portfolio__skills .progress-bar__fill-3 {
-      animation: fill-3 0.5s ease-out 0s;
-      animation-fill-mode: forwards;
-      width: 0%; }
-    .portfolio__skills .progress-bar__fill-4 {
-      animation: fill-4 0.5s ease-out 0s;
-      animation-fill-mode: forwards;
-      width: 0%; }
-    .portfolio__skills .progress-bar__fill-5 {
-      animation: fill-5 0.5s ease-out 0s;
-      animation-fill-mode: forwards;
-      width: 0%; }
-
-@keyframes label {
-  0% {
-    opacity: 0;
-    transform: translateY(10px); }
-  100% {
-    opacity: 0.9;
-    transform: translateY(0); } }
-
-@keyframes fill-1 {
-  0% {
-    width: 0%; }
-  100% {
-    width: 70%; } }
-
-@keyframes fill-2 {
-  0% {
-    width: 0%; }
-  100% {
-    width: 90%; } }
-
-@keyframes fill-3 {
-  0% {
-    width: 0%; }
-  100% {
-    width: 40%; } }
-
-@keyframes fill-4 {
-  0% {
-    width: 0%; }
-  100% {
-    width: 50%; } }
-
-@keyframes fill-5 {
-  0% {
-    width: 0%; }
-  100% {
-    width: 30%; } }
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 40px auto; }
+    .portfolio__skills__progress__bg {
+      width: 32%;
+      margin-right: 15px;
+      margin-bottom: 50px;
+      background-color: aliceblue;
+      height: 22px;
+      -moz-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+      -webkit-box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc;
+      box-shadow: 0 1px 0px #bebbb9 inset, 0 1px 0 #fcfcfc; }
+      .portfolio__skills__progress__bg__color1 {
+        height: 22px;
+        width: 85%;
+        background-color: #f18b6d;
+        display: flex;
+        align-items: center; }
+        .portfolio__skills__progress__bg__color1__p {
+          padding-left: 10px; }
+      .portfolio__skills__progress__bg__color2 {
+        height: 22px;
+        width: 85%;
+        background-color: #6a4d8a;
+        display: flex;
+        align-items: center; }
+        .portfolio__skills__progress__bg__color2__p {
+          padding-left: 10px;
+          color: #fff; }
+      .portfolio__skills__progress__bg__color3 {
+        height: 22px;
+        width: 50%;
+        background-color: cyan;
+        display: flex;
+        align-items: center; }
+        .portfolio__skills__progress__bg__color3__p {
+          padding-left: 10px; }
+      .portfolio__skills__progress__bg__color4 {
+        height: 22px;
+        width: 60%;
+        background-color: darkgreen;
+        display: flex;
+        align-items: center; }
+        .portfolio__skills__progress__bg__color4__p {
+          padding-left: 10px;
+          color: #fff; }
+      .portfolio__skills__progress__bg__color5 {
+        height: 22px;
+        width: 50%;
+        background-color: darkgoldenrod;
+        display: flex;
+        align-items: center; }
+        .portfolio__skills__progress__bg__color5__p {
+          padding-left: 10px; }
+      .portfolio__skills__progress__bg__color6 {
+        height: 22px;
+        width: 50%;
+        background-color: mediumvioletred;
+        display: flex;
+        align-items: center; }
+        .portfolio__skills__progress__bg__color6__p {
+          padding-left: 10px;
+          color: #fff; }
 
 .portfolio__contact {
-  background-color: #d89864;
-  padding: 2.5rem 0; }
+  background-image: url("https://raw.githubusercontent.com/PurvaJain/images/master/contactBg.png");
+  padding: 2.5rem 0;
+  color: #4c5332; }
   .portfolio__contact__heading {
     text-align: center; }
   .portfolio__contact__section {
@@ -2694,22 +2660,20 @@
     align-items: center;
     margin: 30px auto; }
     .portfolio__contact__section__addressSection__address {
-      border-right: 1px solid #e1e1e1;
+      border-right: 1.5px solid #4c5332;
       padding: 0 20px 0 0;
       display: table-cell;
-      font-weight: 400;
-      font-size: 16px;
-      color: #f1d204; }
+      font-weight: 700;
+      font-size: 16px; }
     .portfolio__contact__section__addressSection__addressDetails {
       padding: 0 0 0 20px;
       display: table-cell; }
     .portfolio__contact__section__contactSection__contact {
-      border-right: 1px solid #e1e1e1;
+      border-right: 1.5px solid #4c5332;
       padding: 0 20px 0 0;
       display: table-cell;
-      font-weight: 400;
-      font-size: 16px;
-      color: #f1d204; }
+      font-weight: 700;
+      font-size: 16px; }
     .portfolio__contact__section__contactSection__contactDetails {
       padding: 0 0 0 20px;
       display: table-cell; }
@@ -2721,14 +2685,15 @@
       display: inline-block;
       padding: 0.625rem 1.625rem; }
       .portfolio__contact__section__socialIcons__li a {
-        color: #000; }
+        color: #4c5332; }
 
 .portfolio__copyright {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
-  background-color: #8c9597; }
+  background-color: #fff;
+  box-shadow: -2px -8px 10px 0 rgba(0, 0, 0, 0.2), -2px -10px 30px 0 rgba(0, 0, 0, 0.19); }
   .portfolio__copyright__top {
     cursor: pointer;
     display: block;
@@ -2739,6 +2704,29 @@
     text-align: center; }
     .portfolio__copyright__top .fa-chevron-up {
       padding-top: 0.5rem; }
+
+@media screen and (max-width: 992px) {
+  .portfolio__education__block {
+    width: 70%; }
+  .portfolio__contact__section {
+    flex-direction: column;
+    align-items: stretch; }
+    .portfolio__contact__section__addressSection {
+      margin-bottom: 20px; }
+      .portfolio__contact__section__addressSection__address {
+        border-right: none; }
+      .portfolio__contact__section__addressSection__addressDetails {
+        padding: 0;
+        display: block; }
+    .portfolio__contact__section__contactSection {
+      margin-bottom: 10px; }
+      .portfolio__contact__section__contactSection__contact {
+        border-right: none; }
+      .portfolio__contact__section__contactSection__contactDetails {
+        padding: 0;
+        display: block; }
+    .portfolio__contact__section__socialIcons {
+      margin-left: -25px; } }
 
 @media screen and (max-width: 768px) {
   .portfolio__navbar {
@@ -2751,19 +2739,29 @@
       padding: 0.8rem 1.8rem; }
     .portfolio__header__info__h1 {
       font-size: 50px; }
+  .portfolio__education__block {
+    width: 70%; }
+  .portfolio__skills__progress__bg {
+    width: 100%; }
   .portfolio__contact__section {
     flex-direction: column;
     align-items: stretch; }
-    .portfolio__contact__section__addressSection__address {
-      border-right: none; }
-    .portfolio__contact__section__addressSection__addressDetails {
-      padding: 0;
-      display: block; }
-    .portfolio__contact__section__contactSection__contact {
-      border-right: none; }
-    .portfolio__contact__section__contactSection__contactDetails {
-      padding: 0;
-      display: block; } }
+    .portfolio__contact__section__addressSection {
+      margin-bottom: 20px; }
+      .portfolio__contact__section__addressSection__address {
+        border-right: none; }
+      .portfolio__contact__section__addressSection__addressDetails {
+        padding: 0;
+        display: block; }
+    .portfolio__contact__section__contactSection {
+      margin-bottom: 10px; }
+      .portfolio__contact__section__contactSection__contact {
+        border-right: none; }
+      .portfolio__contact__section__contactSection__contactDetails {
+        padding: 0;
+        display: block; }
+    .portfolio__contact__section__socialIcons {
+      margin-left: -25px; } }
 
 @media screen and (max-width: 480px) {
   .toggle {
@@ -2773,7 +2771,7 @@
     .portfolio__navbar__icon {
       display: block;
       z-index: 99999;
-      color: #91640f;
+      color: #1e9fb2;
       position: absolute;
       right: 0;
       padding: 0.625rem; }
@@ -2784,12 +2782,25 @@
       background-color: #fff; }
       .portfolio__navbar__ul__li {
         padding: 0.625rem 0; }
-  .portfolio__header__info__button {
-    padding: 0.5rem 1rem; }
-  .portfolio__header__info__h1 {
-    font-size: 40px; }
-  .portfolio__header__info__h2 {
-    margin: 0; }
+  .portfolio__header__info {
+    padding-bottom: 32px; }
+    .portfolio__header__info__button {
+      padding: 0.5rem 1rem;
+      font-size: 12px;
+      margin: 0.5rem; }
+    .portfolio__header__info__h1 {
+      font-size: 40px; }
+    .portfolio__header__info__h2 {
+      margin: 0; }
+  .portfolio__header__socialIcons__ul {
+    padding-top: 0;
+    font-size: 1.2rem; }
+  .portfolio__header__down {
+    margin: 0.2rem auto 0 auto;
+    width: 1.9rem;
+    height: 1.9rem; }
+  .portfolio__education__block {
+    width: 70%; }
   .portfolio__contact__section__addressSection__address {
     border-right: none; }
   .portfolio__contact__section__addressSection__addressDetails {
