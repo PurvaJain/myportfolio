@@ -2465,7 +2465,7 @@
     color: #8c9597; }
 
 .portfolio__experience {
-  background-image: url("https://demos.onepagelove.com/illdy/wp-content/themes/illdy/layout/images/testiomnials-background.jpg");
+  background-image: url("https://raw.githubusercontent.com/PurvaJain/images/master/purpleBg.jpg");
   text-align: center;
   padding: 2.5rem 0;
   display: flex;
@@ -2572,7 +2572,8 @@
 
 .portfolio__skills {
   width: 100%;
-  padding-top: 2.5rem; }
+  padding-top: 2.5rem;
+  background: grey; }
   .portfolio__skills__heading {
     text-align: center;
     font-size: 35px;
@@ -2585,7 +2586,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 40px auto; }
+    margin: 40px auto 0 auto; }
     .portfolio__skills__progress__bg {
       width: 32%;
       margin-right: 15px;
